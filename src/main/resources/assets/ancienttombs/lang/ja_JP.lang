@@ -2,3 +2,10 @@
 itemGroup.ancienttombs=古墳MOD
 
 item.ancienttombs.golden_seal.name=金印
+
+config.ancienttombs.category.general=古墳MODの設定
+config.ancienttombs.category.general.tooltip=古墳MODの設定です
+config.ancienttombs.category.difficulty=難易度
+config.ancienttombs.category.difficulty.tooltip=難易度とバランスに関する設定です
+config.ancienttombs.prop.golden_seal_rarity=金印の珍しさ
+config.ancienttombs.prop.golden_seal_rarity.tooltip=金印の珍しさです。大きいほど珍しく、出にくくなります。
