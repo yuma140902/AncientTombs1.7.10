@@ -27,6 +27,7 @@ public class ModAncientTombs {
 	public static final String MOD_NAME = "古墳MOD";
 	public static final String MINECRAFT_VERSION = "1.7.10";
 	public static final String MOD_VERSION = "0.0.0";
+	public static final ModCreativeTab MOD_CREATIVE_TAB = new ModCreativeTab();
 	
 	private void loadModMetadata(ModMetadata modMetadata) {
 		modMetadata.modId = MOD_ID;
