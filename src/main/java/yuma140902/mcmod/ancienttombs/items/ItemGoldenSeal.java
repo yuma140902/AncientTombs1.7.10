@@ -8,6 +8,7 @@ import yuma140902.mcmod.ancienttombs.ModAncientTombs;
 
 public class ItemGoldenSeal extends Item implements IRegisterable {
 	public ItemGoldenSeal() {
+		this.setMaxStackSize(1);
 	}
 	
 	@Override
