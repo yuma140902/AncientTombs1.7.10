@@ -10,6 +10,7 @@ import yuma140902.mcmod.ancienttombs.blocks.ModBlocks;
 import yuma140902.mcmod.ancienttombs.items.ModItems;
 import yuma140902.mcmod.ancienttombs.proxy.CommonProxy;
 import yuma140902.mcmod.ancienttombs.util.Stat;
+import yuma140902.mcmod.ancienttombs.worldgen.WorldGenerators;
 
 @Mod(modid = ModAncientTombs.MOD_ID, version = ModAncientTombs.MOD_VERSION, useMetadata = true, guiFactory = Stat.MOD_CONFIG_GUI_FACTORY)
 public class ModAncientTombs {

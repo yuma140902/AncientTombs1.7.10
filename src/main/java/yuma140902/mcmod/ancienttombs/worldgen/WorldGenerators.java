@@ -1,4 +1,4 @@
-package yuma140902.mcmod.ancienttombs;
+package yuma140902.mcmod.ancienttombs.worldgen;
 
 public final class WorldGenerators {
 	private WorldGenerators() {}
