@@ -4,5 +4,8 @@ public final class ModItems {
 	private ModItems() {}
 	
 	public static void register() {
+		goldenSeal.register();
 	}
+	
+	public static ItemGoldenSeal goldenSeal = new ItemGoldenSeal();
 }
