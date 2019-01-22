@@ -2,6 +2,7 @@
 itemGroup.ancienttombs=古墳MOD
 
 item.ancienttombs.golden_seal.name=金印
+item.ancienttombs.moses_ten_commandments.name=モーセの十戒
 
 config.ancienttombs.category.general=古墳MODの設定
 config.ancienttombs.category.general.tooltip=古墳MODの設定です
