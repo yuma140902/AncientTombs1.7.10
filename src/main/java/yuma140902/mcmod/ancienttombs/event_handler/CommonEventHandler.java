@@ -7,10 +7,13 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.player.UseHoeEvent;
 import yuma140902.mcmod.ancienttombs.ModAncientTombs;
 import yuma140902.mcmod.ancienttombs.ModConfigCore;
+import yuma140902.mcmod.ancienttombs.items.ItemMosesTenCommandments;
 import yuma140902.mcmod.ancienttombs.items.ModItems;
 
 public class CommonEventHandler {
@@ -39,5 +42,21 @@ public class CommonEventHandler {
 	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
 		if(ModAncientTombs.MOD_ID.equals(event.modID))
 			ModConfigCore.syncConfig();
+	}
+	
+	@SubscribeEvent
+	public void onLivingAttackEvent(LivingAttackEvent event) {
+		if(event.source != DamageSource.inWall) return;
+		if(event.entityLiving == null || !(event.entityLiving instanceof EntityPlayer)) return;
+		
+		EntityPlayer player = (EntityPlayer) event.entityLiving;
+		ItemStack[] inventory = player.inventory.mainInventory;
+		
+		for(int i = 0; i < inventory.length; ++i) {
+			if (inventory[i] != null && inventory[i].getItem() == ModItems.mosesTenCommandments && ItemMosesTenCommandments.isEnabled(inventory[i])) {
+				event.setCanceled(true);
+				return;
+			}
+		}
 	}
 }

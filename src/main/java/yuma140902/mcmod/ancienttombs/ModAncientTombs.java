@@ -45,6 +45,8 @@ public class ModAncientTombs {
 		
 		ModBlocks.register();
 		ModItems.register();
+		
+		proxy.registerTileEntities();
 	}
 	
 	@EventHandler

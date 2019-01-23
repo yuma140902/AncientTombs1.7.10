@@ -8,7 +8,9 @@ tile.ancienttombs.moses_dummy_block.name=モーセのダミーブロック
 
 config.ancienttombs.category.general=古墳MODの設定
 config.ancienttombs.category.general.tooltip=古墳MODの設定です
-config.ancienttombs.category.difficulty=難易度
-config.ancienttombs.category.difficulty.tooltip=難易度とバランスに関する設定です
+config.ancienttombs.category.items=アイテム
+config.ancienttombs.category.items.tooltip=アイテムに関する設定です
 config.ancienttombs.prop.golden_seal_rarity=金印の珍しさ
 config.ancienttombs.prop.golden_seal_rarity.tooltip=金印の珍しさです。大きいほど珍しく、出にくくなります。
+config.ancienttombs.prop.moses_block_range=モーセの十戒
+config.ancienttombs.prop.moses_block_range.tooltip=モーセの十戒でどけられるブロックの範囲
